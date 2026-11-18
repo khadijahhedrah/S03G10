@@ -2,12 +2,112 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 1 - Kumpulan 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S03-G10 | Topic 3: Public Health England</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            text-align: center;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 1.6rem;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        p {
+            color: #64748b;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+        .btn {
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+        .btn-secondary {
+            background-color: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+        }
+        .btn-secondary:hover {
+            background-color: #e2e8f0;
+        }
+        .pdf-viewer {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        @media (max-width: 600px) {
+            .pdf-viewer {
+                height: 450px;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
-    <h1>Tugasan SCST1133 - Topik 3 (Public Health England)</h1>
-    <p>Sila klik pautan di bawah untuk melihat laporan PDF kumpulan kami:</p>
-    <!-- Ruang kosong ditukar kepada %20 supaya pelayar web boleh baca -->
-    <a href="S03-G10_Topic3_Public20%Health20%England.pdf" target="_blank" style="font-size: 18px; color: blue;">Buka PDF Laporan</a>
+<body>
+
+    <div class="container">
+        <span class="badge">Kumpulan S03-G10</span>
+        <h1>Topic 3: Public Health England</h1>
+        <p>Sila gunakan butang di bawah untuk membuka dokumen dalam tab baharu atau memuat turun fail PDF.</p>
+
+        <div class="btn-group">
+            <!-- Pastikan nama fail di bawah sama 100% dengan nama fail PDF di GitHub anda -->
+            <a href="S03-G10_Topic3_Public%20Health%20England.pdf" target="_blank" class="btn btn-primary">Buka PDF Penuh</a>
+            <a href="S03-G10_Topic3_Public%20Health%20England.pdf" download class="btn btn-secondary">Muat Turun PDF</a>
+        </div>
+
+        <!-- Paparan PDF secara langsung -->
+        <iframe class="pdf-viewer" src="S03-G10_Topic3_Public%20Health%20England.pdf" title="Pratonton PDF"></iframe>
+    </div>
+
 </body>
 </html>
